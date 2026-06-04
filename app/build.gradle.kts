@@ -15,8 +15,8 @@ android {
         applicationId = "lol.omnius.android.kali"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0-kali"
+        versionCode = 2
+        versionName = "1.0.1-kali"
         // BuildConfig flag the app reads to apply low-memory defaults.
         buildConfigField("boolean", "LOW_RAM", "true")
     }
