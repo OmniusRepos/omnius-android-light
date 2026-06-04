@@ -1,0 +1,38 @@
+# Gradle files
+.gradle/
+build/
+.kotlin/
+.DS_Store
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+# Keep the project debug keystore so release builds stay signable / updatable in place
+!debug.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+app/src/main/java/lol/omnius/android/.DS_Store
