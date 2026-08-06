@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-**Omnius** (this build: "Omnius Kali", `lol.omnius.android.kali`) — an Android TV
+**Omnius** (this build: "Omnius Light", `lol.omnius.android.light`) — an Android TV
 streaming app for **movies, series, and live TV**, including **torrent (P2P) streaming**
 via libtorrent4j. Built with **Compose for TV + Navigation Compose** and
 **Media3/ExoPlayer** (HLS + DASH). It talks to its **own backend at `https://api.omnius.lol/`**
-(not the Negenet playlist-backend). This is the **low-RAM "Kali" variant** for 1 GB /
+(not the Negenet playlist-backend). This is the **low-RAM "Light" variant** for 1 GB /
 Android 9 boxes, with a distinct app id so it installs alongside the standard build.
 It ships as a *managed app* auto-updated by the Negenet launcher — see workspace root `../CLAUDE.md`.
 
@@ -30,7 +30,7 @@ No test suite. `compileSdk 35` / `minSdk 24` / `targetSdk 35`, JVM 17, R8 minify
 
 ## Architecture / conventions
 
-- **"Kali" = low-RAM variant.** `applicationId = lol.omnius.android.kali`,
+- **"Light" = low-RAM variant.** `applicationId = lol.omnius.android.light`,
   `buildConfigField LOW_RAM = true`, `android:largeHeap`. The app reads `BuildConfig.LOW_RAM`
   to apply low-memory defaults. Keep changes friendly to 1 GB / Android 9 hardware.
 - **Backend is `api.omnius.lol`** (default in `data/ServerManager` + `api/ApiClient`;

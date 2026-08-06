@@ -10,13 +10,13 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        // Distinct app id so the low-RAM "Kali" build installs alongside the
+        // Distinct app id so the low-RAM "Light" build installs alongside the
         // standard app. Tuned for 1 GB / Android 9 boxes.
-        applicationId = "lol.omnius.android.kali"
+        applicationId = "lol.omnius.android.light"
         minSdk = 24
         targetSdk = 35
         versionCode = 2
-        versionName = "1.0.1-kali"
+        versionName = "1.0.1-light"
         // BuildConfig flag the app reads to apply low-memory defaults.
         buildConfigField("boolean", "LOW_RAM", "true")
     }

@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "omnius-android-kali"
+rootProject.name = "omnius-android-light"
 include(":app")

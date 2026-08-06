@@ -547,7 +547,7 @@ class PlayerActivity : ComponentActivity() {
 
         // Limit buffer to prevent OOM on Mi Box (268MB heap)
         val loadControl = DefaultLoadControl.Builder()
-            // Low-RAM (Kali) build: smaller buffers so the player holds less in
+            // Low-RAM (Light) build: smaller buffers so the player holds less in
             // memory on a 1 GB box.
             .setBufferDurationsMs(8_000, 24_000, 1_500, 3_000)
             .build()

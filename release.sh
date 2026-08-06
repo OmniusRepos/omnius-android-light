@@ -1,5 +1,6 @@
 #!/bin/bash
-# Build the Omnius (Kali) app and publish it so Negenet boxes auto-update it:
+# Build the Omnius (Light) app. NOTE: Negenet no longer distributes this app -
+# it ships through Aptoide now. See publish-aptoide.sh.
 # the launcher reads apps.json from the release channel and silently installs a
 # newer Omnius (root install, no dialog) — same mechanism as the launcher itself.
 #

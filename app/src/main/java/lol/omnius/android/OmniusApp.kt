@@ -23,7 +23,7 @@ class OmniusApp : Application(), ImageLoaderFactory {
     override fun newImageLoader(): ImageLoader {
         return ImageLoader.Builder(this)
             .memoryCache {
-                // Low-RAM (Kali) build: keep the in-memory poster cache small.
+                // Low-RAM (Light) build: keep the in-memory poster cache small.
                 MemoryCache.Builder(this)
                     .maxSizePercent(0.10)
                     .build()
